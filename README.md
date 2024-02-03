@@ -2,11 +2,10 @@
 This repository will contain our final project for our cybersecurity class. We will show the command, and mostly the screenshot and the report of our overall project.
 
 
-Our final project title is:
+Our final project title is: Red-Blue Team Simulation with OSSIM SIEM
 
 
-
-In this project, we utilize MITRE CALDERA and Alien Vault OSSIM.
+In this project, we utilize MITRE CALDERA and Alien Vault OSSIM to create a simulation of an attack to our computer. We utlized some of the Caldera attack capability to gather data and information of our target. 
 
 
 Code below show the powershell script that we would need to run on an elevated privilage (run as administrator)
